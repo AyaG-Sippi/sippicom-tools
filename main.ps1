@@ -1,3 +1,4 @@
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
 
 function Show-Header {
