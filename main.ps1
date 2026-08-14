@@ -3,12 +3,24 @@ $BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
 function Show-Header {
     Clear-Host
     Write-Host ''
-    Write-Host '  ____ ___ ____  ____ ___ ____ ___  __  __ ' -ForegroundColor DarkYellow
-    Write-Host ' / ___|_ _|  _ \|  _ \_ _/ ___/ _ \|  \/  |' -ForegroundColor DarkYellow
-    Write-Host ' \___ \| || |_) | |_) | | |  | | | | |\/| |' -ForegroundColor Yellow
-    Write-Host '  ___) | ||  __/|  __/| | |__| |_| | |  | |' -ForegroundColor Yellow
-    Write-Host ' |____/___|_|   |_|  |___\____\___/|_|  |_|' -ForegroundColor DarkYellow
-    Write-Host '          --== IT-SOLUTIONS ==--           ' -ForegroundColor Cyan
+    Write-Host '            .-----------------.           ' -ForegroundColor DarkYellow
+    Write-Host '          .*********************.         ' -ForegroundColor DarkYellow
+    Write-Host '        .***                 ***.        ' -ForegroundColor Yellow
+    Write-Host '    .---***-***********************---.   ' -ForegroundColor Yellow
+    Write-Host '   /   ***  **                   ** ***\  ' -ForegroundColor DarkYellow
+    Write-Host '  |   ***   **                   **  ***| ' -ForegroundColor Yellow
+    Write-Host '  |   ***   **                          | ' -ForegroundColor Yellow
+    Write-Host '   \   *******                         /  ' -ForegroundColor DarkYellow
+    Write-Host '    `---*****************************--`  ' -ForegroundColor DarkYellow
+    Write-Host '         **                      ****     ' -ForegroundColor Yellow
+    Write-Host '         **                        **     ' -ForegroundColor Yellow
+    Write-Host '  |   ***   **                   **  ***| ' -ForegroundColor Yellow
+    Write-Host '   \   *******                   ** ***/  ' -ForegroundColor DarkYellow
+    Write-Host '    `---***********************-**--**-`  ' -ForegroundColor DarkYellow
+    Write-Host '        `***                 ***`        ' -ForegroundColor Yellow
+    Write-Host '          `*********************`         ' -ForegroundColor DarkYellow
+    Write-Host '            `-----------------`           ' -ForegroundColor DarkYellow
+    Write-Host '          --== SIPPICOM IT-SOLUTIONS ==-- ' -ForegroundColor Cyan
     Write-Host '==================================================================' -ForegroundColor DarkYellow
     Write-Host '   SIPPICOM IT-SOLUTIONS — CLOUD SUITE & DEPLOYMENT HUB' -ForegroundColor Yellow
     Write-Host '   Live GitHub Execution Engine (irm | iex)' -ForegroundColor Gray
