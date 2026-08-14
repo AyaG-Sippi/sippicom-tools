@@ -2,6 +2,13 @@ $BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
 
 function Show-Header {
     Clear-Host
+    Write-Host ''
+    Write-Host '  ____ ___ ____  ____ ___ ____ ___  __  __ ' -ForegroundColor DarkYellow
+    Write-Host ' / ___|_ _|  _ \|  _ \_ _/ ___/ _ \|  \/  |' -ForegroundColor DarkYellow
+    Write-Host ' \___ \| || |_) | |_) | | |  | | | | |\/| |' -ForegroundColor Yellow
+    Write-Host '  ___) | ||  __/|  __/| | |__| |_| | |  | |' -ForegroundColor Yellow
+    Write-Host ' |____/___|_|   |_|  |___\____\___/|_|  |_|' -ForegroundColor DarkYellow
+    Write-Host '          --== IT-SOLUTIONS ==--           ' -ForegroundColor Cyan
     Write-Host '==================================================================' -ForegroundColor DarkYellow
     Write-Host '   SIPPICOM IT-SOLUTIONS — CLOUD SUITE & DEPLOYMENT HUB' -ForegroundColor Yellow
     Write-Host '   Live GitHub Execution Engine (irm | iex)' -ForegroundColor Gray
@@ -28,13 +35,13 @@ do {
     Show-Header
     Write-Host 'Select a SIPPICOM Cloud Tool:' -ForegroundColor Cyan
     Write-Host ''
-    Write-Host '  [1] CertRDP          - RDP Code Signing & PKI Trust Suite' -ForegroundColor White
-    Write-Host '  [2] PrinterFix       - Multi-Threaded Print Spooler & IP Hub' -ForegroundColor White
-    Write-Host '  [3] AutoDeploy       - Workstation Software & Setup Deployer' -ForegroundColor White
-    Write-Host '  [4] AutoDeploy Fast  - Unattended Silent Workstation Deployer' -ForegroundColor White
-    Write-Host '  [5] CtrlAltPass      - Enterprise Password Generator' -ForegroundColor White
-    Write-Host '  [6] Download All     - Save standalone binaries locally' -ForegroundColor White
-    Write-Host '  [Q] Exit' -ForegroundColor Red
+    Write-Host '  [1] 🔐 CertRDP          - RDP Code Signing & PKI Trust Suite' -ForegroundColor White
+    Write-Host '  [2] 🖨️  PrinterFix       - Multi-Threaded Print Spooler & IP Hub' -ForegroundColor White
+    Write-Host '  [3] 🚀 AutoDeploy       - Workstation Software & Setup Deployer' -ForegroundColor White
+    Write-Host '  [4] ⚡ AutoDeploy Fast  - Unattended Silent Workstation Deployer' -ForegroundColor White
+    Write-Host '  [5] 🔑 CtrlAltPass      - Enterprise Password Generator' -ForegroundColor White
+    Write-Host '  [6] 📦 Download All     - Save standalone binaries locally' -ForegroundColor White
+    Write-Host '  [Q] ❌ Exit' -ForegroundColor Red
     Write-Host ''
     Write-Host 'Enter selection [1-6, Q]: ' -NoNewline -ForegroundColor Yellow
 
