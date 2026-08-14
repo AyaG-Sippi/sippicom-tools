@@ -1,6 +1,4 @@
-﻿param()
-
-$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomPrinterFix.exe'
+﻿$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomPrinterFix.exe'
 $dest = Join-Path $env:TEMP 'SippicomPrinterFix.exe'
 
 Write-Host '--> Launching SIPPICOM PrinterFix from Cloud...' -ForegroundColor Cyan

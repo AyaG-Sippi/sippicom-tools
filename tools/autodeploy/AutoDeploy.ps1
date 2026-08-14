@@ -1,6 +1,4 @@
-﻿param()
-
-$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomAutoDeploy.exe'
+﻿$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomAutoDeploy.exe'
 $dest = Join-Path $env:TEMP 'SippicomAutoDeploy.exe'
 
 Write-Host '--> Launching SIPPICOM AutoDeploy from Cloud...' -ForegroundColor Cyan

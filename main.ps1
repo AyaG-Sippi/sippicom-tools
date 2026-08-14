@@ -1,6 +1,4 @@
-﻿param()
-
-$BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
+﻿$BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
 
 function Show-Header {
     Clear-Host
