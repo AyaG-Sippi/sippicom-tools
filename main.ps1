@@ -1,21 +1,30 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
+$esc = [char]27
+$orange = "$esc[38;2;243;139;0m"
+$gold   = "$esc[38;2;255;184;28m"
+$reset  = "$esc[0m"
 
 function Show-Header {
     Clear-Host
     Write-Host ''
-    Write-Host '                 ██████████████           ' -ForegroundColor Yellow
-    Write-Host '              ████████████████████        ' -ForegroundColor Yellow
-    Write-Host '            ██████            ██████      ' -ForegroundColor Yellow
-    Write-Host '          ██████  ████████████  ██████    ' -ForegroundColor Yellow
-    Write-Host '          ██████  ████    ████            ' -ForegroundColor Yellow
-    Write-Host '            ████████████████████          ' -ForegroundColor Yellow
-    Write-Host '                  ████    ████  ██████    ' -ForegroundColor Yellow
-    Write-Host '          ██████  ████████████  ██████    ' -ForegroundColor Yellow
-    Write-Host '            ██████            ██████      ' -ForegroundColor Yellow
-    Write-Host '              ████████████████████        ' -ForegroundColor Yellow
-    Write-Host '                 ██████████████           ' -ForegroundColor Yellow
-    Write-Host '          --== SIPPICOM IT-SOLUTIONS ==-- ' -ForegroundColor Yellow
+    Write-Host ("               $orange" + '       ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░' + "$reset")
+    Write-Host ("               $orange" + '      ▒▒░              ░▒▒' + "$reset")
+    Write-Host ("               $orange" + '   ░ ▒▓░░░░░░░░░░░░░░░░░░▒▒░░' + "$reset")
+    Write-Host ("               $orange" + ' ░▒▒░▒▒ ░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒▒▒░' + "$reset")
+    Write-Host ("               $orange" + '░▓░  ▒▒                  ▒▒  ░▓▒' + "$reset")
+    Write-Host ("               $orange" + '▒▓   ▒▓                  ░░   ░░' + "$reset")
+    Write-Host ("               $orange" + '░▓░  ▒▒' + "$reset")
+    Write-Host ("               $orange" + ' ░▒▒▒▒░░░░▒░░░░▒░░░░░▒░░░▒░░░' + "$reset")
+    Write-Host ("               $orange" + '   ░░░▒░▒░░▒░▒░░▒░▒░▒░░▒░░▒░▒▒░' + "$reset")
+    Write-Host ("               $orange" + '     ▒▒                      ▒▓░' + "$reset")
+    Write-Host ("               $orange" + '░░   ▒▒                  ░░   ▒▓' + "$reset")
+    Write-Host ("               $orange" + '▒▓░  ▒▒                  ▒▓  ░▓░' + "$reset")
+    Write-Host ("               $orange" + ' ░▒▒▒▒▒░░▒░░░▒░░░▒░░░░▒░ ▒▒░▒▒░' + "$reset")
+    Write-Host ("               $orange" + '   ░░░▒░░░▒░▒░░▒░░▒░▒░░░░▒▒ ░' + "$reset")
+    Write-Host ("               $orange" + '      ▒▒░              ░▒▓░' + "$reset")
+    Write-Host ("               $orange" + '       ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░' + "$reset")
+    Write-Host "          $gold--== SIPPICOM IT-SOLUTIONS ==--$reset"
     Write-Host '==================================================================' -ForegroundColor DarkYellow
     Write-Host '   SIPPICOM IT-SOLUTIONS — CLOUD SUITE & DEPLOYMENT HUB' -ForegroundColor Yellow
     Write-Host '   Live GitHub Execution Engine (irm | iex)' -ForegroundColor Gray
