@@ -1,40 +1,28 @@
 <#
 .SYNOPSIS
-    SIPPICOM CtrlAltPass (Password & Credential Generator)
+    SIPPICOM CtrlAltPass Cloud Launcher
 .DESCRIPTION
-    irm https://raw.githubusercontent.com/sippicom/tools/main/tools/ctrlaltpass/CtrlAltPass.ps1 | iex
+    irm https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/tools/ctrlaltpass/CtrlAltPass.ps1 | iex
 #>
 
-function Generate-SippicomPassword {
-    param([int]$length = 16)
+$BASE_URL = "https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main"
+$exeUrl = "$BASE_URL/bin/SippicomCtrlAltPass.exe"
+$localExe = [System.IO.Path]::Combine($env:TEMP, "SippicomCtrlAltPass.exe")
+
+Write-Host "--> Launching SIPPICOM CtrlAltPass from Cloud..." -ForegroundColor Cyan
+
+try {
+    (New-Object System.Net.WebClient).DownloadFile($exeUrl, $localExe)
+    Start-Process -FilePath $localExe
+    Write-Host "✓ CtrlAltPass GUI launched successfully!" -ForegroundColor Green
+} catch {
+    Write-Host "Generating fallback password in console..." -ForegroundColor Yellow
     $chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*()-_=+"
-    $bytes = New-Object byte[] $length
-    $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
-    $rng.GetBytes($bytes)
-    $res = ""
-    for ($i = 0; $i -lt $length; $i++) {
-        $res += $chars[$bytes[$i] % $chars.Length]
-    }
-    return $res
+    $bytes = New-Object byte[] 18
+    (New-Object Security.Cryptography.RNGCryptoServiceProvider).GetBytes($bytes)
+    $pass = ""
+    foreach ($b in $bytes) { $pass += $chars[$b % $chars.Length] }
+    Write-Host "Generated Password: $pass" -ForegroundColor Green
+    Set-Clipboard -Value $pass
+    Write-Host "✓ Copied to clipboard!" -ForegroundColor Cyan
 }
-
-Clear-Host
-Write-Host "==================================================================" -ForegroundColor DarkYellow
-Write-Host "   SIPPICOM CTRLALTPASS — SECURE CREDENTIAL & PASSWORD SUITE" -ForegroundColor Yellow
-Write-Host "==================================================================" -ForegroundColor DarkYellow
-Write-Host ""
-
-$p1 = Generate-SippicomPassword -length 16
-$p2 = Generate-SippicomPassword -length 20
-$p3 = Generate-SippicomPassword -length 24
-$pin = (Get-Random -Minimum 100000 -Maximum 999999).ToString()
-
-Write-Host "Generated Enterprise Passwords:" -ForegroundColor Cyan
-Write-Host "  • Standard (16 chars):  $p1" -ForegroundColor Green
-Write-Host "  • High-Sec  (20 chars):  $p2" -ForegroundColor Green
-Write-Host "  • Ultra-Sec (24 chars):  $p3" -ForegroundColor Green
-Write-Host "  • Secure PIN (6 digits): $pin" -ForegroundColor Yellow
-Write-Host ""
-Set-Clipboard -Value $p1
-Write-Host "✓ Standard password ($p1) has been copied to your clipboard!" -ForegroundColor Cyan
-Write-Host ""
