@@ -9,8 +9,7 @@ function Show-Header {
     Write-Host ''
 }
 
-function Launch-Tool {
-    param([string]$ToolName, [string]$ExeName)
+function Launch-Tool ($ToolName, $ExeName) {
     Write-Host ''
     Write-Host ('--> Launching ' + $ToolName + ' from Cloud...') -ForegroundColor Cyan
     $exeUrl = $BASE_URL + '/bin/' + $ExeName
