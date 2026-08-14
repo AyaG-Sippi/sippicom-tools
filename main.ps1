@@ -4,12 +4,12 @@ $orange = "$esc[38;2;243;139;0m"
 $gold   = "$esc[38;2;255;184;28m"
 $reset  = "$esc[0m"
 
-# Construct Unicode shade blocks at runtime to guarantee 100% codepage immunity
+# String-based shade blocks for flawless multiplication in PowerShell
 $b0 = ' '
-$b1 = [char]0x2591 # light shade
-$b2 = [char]0x2592 # medium shade
-$b3 = [char]0x2593 # dark shade
-$b4 = [char]0x2588 # full block
+$b1 = "$([char]0x2591)"
+$b2 = "$([char]0x2592)"
+$b3 = "$([char]0x2593)"
+$b4 = "$([char]0x2588)"
 
 function Show-Header {
     Clear-Host
