@@ -17,7 +17,7 @@ try {
     Write-Host "✓ CtrlAltPass GUI launched successfully!" -ForegroundColor Green
 } catch {
     Write-Host "Generating fallback password in console..." -ForegroundColor Yellow
-    $chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*()-_=+"
+    $chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#%*-_=+'
     $bytes = New-Object byte[] 18
     (New-Object Security.Cryptography.RNGCryptoServiceProvider).GetBytes($bytes)
     $pass = ""
