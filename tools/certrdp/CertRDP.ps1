@@ -1,4 +1,4 @@
-﻿$FilePath = if ($args.Count -gt 0) { $args[0] } else { $null }
+$FilePath = if ($args.Count -gt 0) { $args[0] } else { $null }
 
 $url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/CertRDP.exe'
 $dest = Join-Path $env:TEMP 'CertRDP.exe'

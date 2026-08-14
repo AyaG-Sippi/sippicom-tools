@@ -1,4 +1,4 @@
-﻿$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomCtrlAltPass.exe'
+$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/SippicomCtrlAltPass.exe'
 $dest = Join-Path $env:TEMP 'SippicomCtrlAltPass.exe'
 
 Write-Host '--> Launching SIPPICOM CtrlAltPass from Cloud...' -ForegroundColor Cyan
