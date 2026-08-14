@@ -32,7 +32,7 @@ function Show-Header {
     Write-Host ''
     Write-Host "                 $gold--== SIPPICOM IT-SOLUTIONS ==--$reset"
     Write-Host '==================================================================' -ForegroundColor DarkYellow
-    Write-Host '       SIPPICOM IT-SOLUTIONS ? CLOUD SUITE & DEPLOYMENT HUB' -ForegroundColor Yellow
+    Write-Host '       SIPPICOM IT-SOLUTIONS - CLOUD SUITE & DEPLOYMENT HUB' -ForegroundColor Yellow
     Write-Host '             Live GitHub Execution Engine (irm | iex)' -ForegroundColor Gray
     Write-Host '==================================================================' -ForegroundColor DarkYellow
     Write-Host ''
