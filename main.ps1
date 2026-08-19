@@ -1,6 +1,6 @@
 $BASE_URL = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main'
 $esc = [char]27
-$orange = "$esc[38;2;243;139;0m"
+$orange = "$esc[38;2;247;141;31m"
 $gold   = "$esc[38;2;255;184;28m"
 $reset  = "$esc[0m"
 
@@ -14,21 +14,22 @@ $b4 = "$([char]0x2588)" # full block
 function Show-Header {
     Clear-Host
     Write-Host ''
-    Write-Host ("                  $orange" + '      ' + $b1 + ($b2 * 16) + $b1 + '      ' + "$reset")
-    Write-Host ("                  $orange" + '    ' + $b2 + $b3 + ($b1 * 2) + '              ' + ($b1 * 2) + $b3 + $b2 + '    ' + "$reset")
-    Write-Host ("                  $orange" + '  ' + $b2 + $b3 + $b1 + '                    ' + $b1 + $b3 + $b2 + '  ' + "$reset")
-    Write-Host ("                  $orange" + ' ' + $b3 + $b4 + $b1 + '   ' + $b1 + ($b2 * 14) + $b1 + '   ' + $b1 + $b4 + $b3 + ' ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + $b1 + '   ' + $b2 + $b3 + ($b1 * 14) + $b3 + $b2 + '   ' + $b1 + $b4 + $b3 + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + '    ' + $b3 + $b4 + '            ' + $b3 + $b4 + '    ' + $b3 + $b4 + '  ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + '    ' + $b3 + $b4 + '            ' + $b3 + $b4 + '        ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + '    ' + $b3 + $b4 + '                      ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + '    ' + $b3 + $b4 + '    ' + ($b2 * 16) + $b1 + ' ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + '    ' + $b3 + $b4 + '    ' + ($b1 * 14) + $b3 + $b2 + '  ' + "$reset")
-    Write-Host ("                  $orange" + $b3 + $b4 + $b1 + '   ' + $b2 + $b3 + ($b1 * 14) + $b3 + $b2 + '   ' + $b1 + $b4 + $b3 + "$reset")
-    Write-Host ("                  $orange" + ' ' + $b3 + $b4 + $b1 + '   ' + $b1 + ($b2 * 14) + $b1 + '   ' + $b1 + $b4 + $b3 + ' ' + "$reset")
-    Write-Host ("                  $orange" + '  ' + $b2 + $b3 + $b1 + '                    ' + $b1 + $b3 + $b2 + '  ' + "$reset")
-    Write-Host ("                  $orange" + '    ' + $b2 + $b3 + ($b1 * 2) + '              ' + ($b1 * 2) + $b3 + $b2 + '    ' + "$reset")
-    Write-Host ("                  $orange" + '      ' + $b1 + ($b2 * 16) + $b1 + '      ' + "$reset")
+    Write-Host ("                $orange" + '       ' + $b1 + ($b2 * 18) + $b1 + "$reset")
+    Write-Host ("                $orange" + '      ' + $b2 + $b3 + $b2 + $b1 + '              ' + $b1 + ($b2 * 2) + $b1 + "$reset")
+    Write-Host ("                $orange" + '   ' + $b1 + ' ' + $b1 + $b3 + ($b1 * 19) + ($b2 * 2) + ($b1 * 3) + "$reset")
+    Write-Host ("                $orange" + ' ' + $b1 + ($b2 * 2) + ($b1 * 2) + $b3 + ($b1 * 20) + ($b2 * 5) + $b1 + "$reset")
+    Write-Host ("                $orange" + $b1 + $b3 + $b2 + '  ' + $b2 + $b3 + $b1 + '                  ' + $b1 + $b3 + $b1 + '  ' + $b2 + $b3 + $b2 + "$reset")
+    Write-Host ("                $orange" + ($b2 * 2) + '   ' + $b1 + $b2 + $b1 + '                  ' + $b1 + $b2 + $b1 + '   ' + ($b1 * 2) + "$reset")
+    Write-Host ("                $orange" + $b1 + $b3 + $b2 + '  ' + ($b1 * 2) + '                    ' + ($b1 * 2) + "$reset")
+    Write-Host ("                $orange" + ' ' + $b1 + ($b2 * 5) + ($b1 * 20) + $b2 + ($b1 * 3) + "$reset")
+    Write-Host ("                $orange" + '   ' + ($b1 * 3) + $b2 + ($b1 * 20) + ($b2 * 5) + $b1 + "$reset")
+    Write-Host ("                $orange" + '     ' + ($b1 * 2) + '                    ' + ($b1 * 2) + '  ' + $b2 + $b3 + $b1 + "$reset")
+    Write-Host ("                $orange" + ($b1 * 2) + '   ' + $b1 + $b2 + $b1 + '                  ' + $b1 + $b2 + $b1 + '   ' + ($b2 * 2) + "$reset")
+    Write-Host ("                $orange" + $b2 + $b3 + $b2 + '  ' + $b1 + $b3 + $b1 + '                  ' + $b1 + $b3 + $b2 + '  ' + $b2 + $b3 + $b1 + "$reset")
+    Write-Host ("                $orange" + ' ' + $b1 + ($b2 * 5) + ($b1 * 20) + $b3 + ($b1 * 2) + ($b2 * 2) + $b1 + "$reset")
+    Write-Host ("                $orange" + '   ' + ($b1 * 3) + ($b2 * 2) + ($b1 * 19) + $b3 + $b1 + ' ' + $b1 + "$reset")
+    Write-Host ("                $orange" + '      ' + $b1 + ($b2 * 2) + $b1 + '              ' + $b1 + $b2 + $b3 + $b2 + "$reset")
+    Write-Host ("                $orange" + '       ' + $b1 + ($b2 * 18) + $b1 + "$reset")
     Write-Host ''
     Write-Host "                 $gold--== SIPPICOM IT-SOLUTIONS ==--$reset"
     Write-Host '==================================================================' -ForegroundColor DarkYellow
