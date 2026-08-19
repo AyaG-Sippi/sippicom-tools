@@ -1,6 +1,6 @@
 $FilePath = if ($args.Count -gt 0) { $args[0] } else { $null }
 
-$url = 'https://raw.githubusercontent.com/AyaG-Sippi/sippicom-tools/main/bin/CertRDP.exe'
+$url = 'https://raw.githubusercontent.com/Sippicom-IT-SOLUTIONS/tools/main/bin/CertRDP.exe'
 $dest = Join-Path $env:TEMP 'CertRDP.exe'
 
 Write-Host '--> Launching SIPPICOM CertRDP from Cloud...' -ForegroundColor Cyan
